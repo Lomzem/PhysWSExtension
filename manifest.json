@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Only Current PHYS WS",
+  "version": "1.0",
+  "description": "Run custom JavaScript on Canvas",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://canvas.butte.edu/courses/32095/modules"],
+      "js": ["content.js"]
+    }
+  ]
+}
+
